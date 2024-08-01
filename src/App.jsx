@@ -1,10 +1,9 @@
-import {BrowserRouter, Route, Rotes} from "react-router-dom"
+import {BrowserRouter, Route, Routes} from "react-router-dom"
 import Home from "./pages/Home"
 import Favoris from "./pages/Favoris"
 import NotFound from "./pages/NotFound"
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
