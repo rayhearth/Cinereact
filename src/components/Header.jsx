@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
 	return (
-		<div className="header">
+		<header className="header">
 			<nav className="navigation">
 				<ul>
 					<NavLink to="/">
@@ -15,7 +15,7 @@ const Header = () => {
 				</ul>
 			</nav>
 			<h1>Ciné React</h1>
-		</div>
+		</header>
 	);
 };
 
