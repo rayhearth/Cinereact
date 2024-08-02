@@ -24,16 +24,16 @@ $color-5: #eeeff5;
   outline: none;
   border: none;
   text-decoration: none;
-}
-
-html { 
-  scroll-behavior: unset;
+  font-family: $font-1;
 }
 
 body {
-  font-family: $font-1;
-  height: 100vh;
   background-color: $color-1;
   color: $color-5;
-  overflow: hidden;
+}
+
+.result{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

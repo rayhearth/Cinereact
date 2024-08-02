@@ -6,12 +6,12 @@ const Header = () => {
 		<header className="header">
 			<nav className="navigation">
 				<ul>
-					<NavLink to="/">
-						<li>Accueil</li>
-					</NavLink>
-					<NavLink to="/favoris">
-						<li>Favoris</li>
-					</NavLink>
+					<li>
+						<NavLink to="/">Accueil</NavLink>
+					</li>
+					<li>
+						<NavLink to="/favoris">Favoris</NavLink>
+					</li>
 				</ul>
 			</nav>
 			<h1>Ciné React</h1>

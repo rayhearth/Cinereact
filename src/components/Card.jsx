@@ -1,10 +1,15 @@
 import React from 'react';
 
-const Card = () => {
+const Card = ({film}) => {
   return (
-    <div className='card'>
-      
-    </div>
+    <li className='card'>
+      <img src="" alt="" />
+      <div className="infos">
+    <h2 className='title'>
+      {film.title}
+    </h2>
+      </div>
+    </li>
   );
 };
 

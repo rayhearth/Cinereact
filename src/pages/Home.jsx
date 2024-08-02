@@ -7,6 +7,13 @@ const Home = () => {
     <div className='home-page'>
       <Header/>
       <Form/>
+      <ul>
+        {
+          data.map((film, index) => {
+            <Card key={index} film={film}/>
+          })
+        }
+      </ul>
     </div>
   );
 };
