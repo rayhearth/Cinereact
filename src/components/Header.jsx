@@ -7,10 +7,10 @@ const Header = () => {
 			<nav className="navigation">
 				<ul>
 					<li>
-						<NavLink to="/">Accueil</NavLink>
+						<NavLink to="/" className={nav => nav.isActive ? "nav-active" : ""}>Accueil</NavLink>
 					</li>
 					<li>
-						<NavLink to="/favoris">Favoris</NavLink>
+						<NavLink to="/favoris" className={nav => nav.isActive ? "nav-active" : ""}>Favoris</NavLink>
 					</li>
 				</ul>
 			</nav>
