@@ -1,16 +1,18 @@
-import React from 'react';
+import React from "react";
 
-const Card = ({film}) => {
-  return (
-    <li className='card'>
-      <img src="" alt="" />
-      <div className="infos">
-    <h2 className='title'>
-      {film.title}
-    </h2>
-      </div>
-    </li>
-  );
+const Card = ({ movie }) => {
+	return (
+		<div className="card">
+			<img
+				src={
+					movie.poster_path
+						? "https://image.tmdb.org/t/p/original" + movie.poster_path
+						: "./poster.jpg"
+				}
+				alt={`affiche" + ${movie.title}`}
+			/>
+		</div>
+	);
 };
 
 export default Card;
