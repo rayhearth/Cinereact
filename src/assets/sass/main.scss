@@ -1,10 +1,6 @@
 @use "./settings";
 
 
-@import "./components/button";
 @import "./components/header";
 @import "./components/form.scss";
 @import "./components/card";
-
-@import "./pages/home";
-@import "./pages/fav";

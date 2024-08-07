@@ -3,24 +3,23 @@
 		text-align: center;
 	}
 	form {
-		width: 300px;
+		width: 19.75rem;
 		margin: 0 auto;
 
 		input[type="text"] {
 			padding: 1px 10px;
-			border-radius: 10px 10px 0 0;
-			border: none;
-			font-size: 1.5rem;
-			display: block;
-			margin: 0 auto;
-			width: 220px;
-			outline: none;
-			text-align: center;
-			border: 1px solid settings.$color-3;
+      border-radius: 10px 10px 0 0;
+      border: none;
+      font-size: 1.5rem;
+      display: block;
+      margin: 0 auto;
+      width: 18.75rem;
+      outline: none;
+      text-align: center;
 		}
 		input[type="submit"] {
 			padding: 1px 10px;
-			width: 220px;
+			width: 18.75rem;
 			border-radius: 0 0 10px 10px;
 			border: none;
 			background: settings.$color-1;
@@ -30,7 +29,7 @@
 			z-index: 10;
 			position: relative;
 			border: 1px solid settings.$color-3;
-			border-radius: 0 0 10px 10px;
+			border-radius: 0 0 0.625rem 0.625rem;
 
 			&:hover {
 				background: settings.$color-3;
@@ -40,17 +39,18 @@
 	.btn-sort-container {
 		border: 1px solid settings.$color-3;
 		margin: 8px auto;
-		width: 220px;
+		padding: 0.3rem;
+		width: 18.75rem;
 		display: flex;
 		justify-content: space-around;
-		border-radius: 10px;
+		border-radius: 0.625rem;
 		cursor: pointer;
 
 		#goodToBad {
-			border-radius: 10px 0 0 10px;
+			border-radius: 0.625rem 0 0 0.625rem;
 		}
 		#badToGood {
-			border-radius: 0 10px 10px 0;
+			border-radius: 0 0.625rem 0.625rem 0;
 		}
 		#goodToBad,
 		#badToGood {
@@ -62,19 +62,6 @@
 			&:hover {
 				background: settings.$color-3;
 			}
-		}
-		#goodToBad span {
-			transform: translateY(-50%) rotate(-90deg);
-			right: 18px;
-		}
-		#badToGood span {
-			transform: translateY(-50%) rotate(90deg);
-			left: 16px;
-		}
-		#goodToBad span,
-		#badToGood span {
-			position: absolute;
-			top: 50%;
 		}
 	}
 }
