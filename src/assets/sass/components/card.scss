@@ -75,10 +75,10 @@
     margin-top: 10px;
   }
   p {
-    color: settings.$color-3;
+    color: settings.$color-5;
     font-size: 1.3rem;
-    line-height: 20px;
-    height: 160px;
+    line-height: 1.25rem;
+    height: 10rem;
     overflow-y: scroll;
 
     &::-webkit-scrollbar {
