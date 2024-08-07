@@ -101,7 +101,7 @@ const Card = ({ movie }) => {
 				<h5>Sorti le : {dateFormateur(movie.release_date)}</h5>
 			) : null}
 			<h4>
-				{movie.vote_average}/10 <i class="fa-solid fa-star"></i>
+				{movie.vote_average}/10 <i className="fa-solid fa-star"></i>
 			</h4>
 			<ul>
 				{movie.genre_ids
