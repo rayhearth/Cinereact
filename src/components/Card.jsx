@@ -107,7 +107,7 @@ const Card = ({ movie }) => {
 				<h5>Sorti le : {dateFormateur(movie.release_date)}</h5>
 			) : null}
 			<h4>
-				{movie.vote_average.toFixed(1)}/10 <i className="fa-solid fa-star"></i>
+			<i className="fa-solid fa-star"></i>	{movie.vote_average.toFixed(1)}/10 
 			</h4>
 
 			<ul>
@@ -117,11 +117,11 @@ const Card = ({ movie }) => {
 						<li key={genre}>{genre.name}</li>
 					})}
 			</ul>
-			{movie.overview ? <h3>Synopsis</h3> : ""}
+			
 			<p>{movie.overview}</p>
 			{movie.genre_ids ? (
 				<div className="btn" onClick={() => addStorage()}>
-					Ajoutez aux favoris
+					J'aime <i class="fa-solid fa-heart"></i>
 				</div>
 			) : (
 				<div

@@ -11,7 +11,7 @@ $font-1: "font-1", sans-serif;
 $font-2: "font-2", serif;
 
 $color-1: #160827;
-$color-2: #23243E;
+$color-2: #361836;
 $color-3:#F22577;
 $color-4:#848593;
 $color-5: #eeeff5;
@@ -35,13 +35,8 @@ h1{
 }
 
 .result{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,  minmax(260px, 1fr));
+  gap: 1.25rem;
   justify-content: center;
-}
-
-> h2 {
-  text-align: center;
-  font-size: 1.9rem;
-  letter-spacing: 1px;
 }
