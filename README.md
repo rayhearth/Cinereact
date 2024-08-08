@@ -1,6 +1,6 @@
 # React - Vitrine
 
-Welcome to CineReact ! This project is an cine application connected to an API
+Welcome to CineReact ! This project is an cine application connected to the movie db api <a href="https://www.themoviedb.org/?language=fr-FR" target="_blank" rel="noreferrer"> https://www.themoviedb.org/?language=fr-FR </a>
 
 ## Languages et software
 
