@@ -103,37 +103,40 @@ const Card = ({ movie }) => {
 				alt={`affiche de" + ${movie.title}`}
 			/>
 			<h2>{movie.title}</h2>
-			{movie.release_date ? (
-				<h5>Sorti le : {dateFormateur(movie.release_date)}</h5>
-			) : null}
-			<h4>
-			<i className="fa-solid fa-star"></i>	{movie.vote_average.toFixed(1)}/10 
-			</h4>
+			<div className="container">
+				{movie.release_date ? (
+					<h5>Sorti le : {dateFormateur(movie.release_date)}</h5>
+				) : null}
+				<h4>
+					<i className="fa-solid fa-star"></i> {movie.vote_average.toFixed(1)}
+					/10
+				</h4>
 
-			<ul>
-				{movie.genre_ids
-					? genreFinder()
-					: movie.genres.map((genre) => {
-						<li key={genre}>{genre.name}</li>
-					})}
-			</ul>
-			
-			<p>{movie.overview}</p>
-			{movie.genre_ids ? (
-				<div className="btn" onClick={() => addStorage()}>
-					J'aime <i class="fa-solid fa-heart"></i>
-				</div>
-			) : (
-				<div
-					className="btn"
-					onClick={() => {
-						deleteStorage();
-						window.location.reload();
-					}}
-				>
-					Suprimer de la liste
-				</div>
-			)}
+				<ul>
+					{movie.genre_ids
+						? genreFinder()
+						: movie.genres.map((genre) => {
+								<li key={genre}>{genre.name}</li>;
+						  })}
+				</ul>
+
+				<p>{movie.overview}</p>
+				{movie.genre_ids ? (
+					<div className="btn" onClick={() => addStorage()}>
+						J'aime <i class="fa-solid fa-heart"></i>
+					</div>
+				) : (
+					<div
+						className="btn"
+						onClick={() => {
+							deleteStorage();
+							window.location.reload();
+						}}
+					>
+						Supprimer <i class="fa-solid fa-trash-can"></i>
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

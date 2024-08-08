@@ -1,12 +1,13 @@
 .card {
 	flex: 1 0 25%;
-	background-color: #222;
+	background-color: settings.$color-2;
 	border-radius: 10px;
 	overflow: hidden;
-	width: 260px;
+	max-width: 350px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 	transition: transform 0.3s ease;
-
+	width: 100%;
+  position: relative;
 	&:hover {
 		transform: scale(1.05);
 	}
@@ -35,70 +36,76 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
+		padding: 0.5rem;
 	}
-	h5 {
-		color: settings.$color-3;
-		letter-spacing: 1px;
-		font-size: 1.2rem;
-		font-weight: 300;
-	}
-	h4 {
-		font-size: 16px;
-		margin-bottom: 15px;
-
-		span {
-			font-size: 0.7rem;
+	.container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+		padding:0 1rem;
+		h3 {
+			letter-spacing: 1px;
+			font-size: 1.4rem;
+			margin-top: 10px;
 		}
-	}
-	ul {
-		margin: 6px 0;
-		display: flex;
-		flex-wrap: wrap;
-	}
-	li {
-		background: settings.$color-1;
-		border: 1px solid settings.$color-3;
-		border-radius: 18px;
-		padding: 2px 8px;
-		margin: 0 4px 4px 0;
-		font-size: 1.1rem;
 
-		&:first-child {
-			margin-left: -4px;
+		h4 {
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 15px;
 		}
-	}
-	h3 {
-		letter-spacing: 1px;
-		font-size: 1.4rem;
-		margin-top: 10px;
-	}
-	p {
-		color: settings.$color-5;
-		font-size: 1.3rem;
-		line-height: 1.25rem;
-		height: 10rem;
-		overflow-y: scroll;
 
-		&::-webkit-scrollbar {
-			display: none;
+		h5 {
+			letter-spacing: 1px;
+			font-size: 1.2rem;
+			font-weight: 300;
 		}
-	}
-	.fa-star {
-		color: #eeb31d;
-	}
-	.btn {
-		background-color: #e50914;
-		border: none;
-		color: white;
-		padding: 10px 15px;
-		border-radius: 5px;
-		cursor: pointer;
-		font-size: 14px;
-		text-transform: uppercase;
-		transition: background-color 0.3s ease;
 
-		&:hover {
-			background-color: #f40612;
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
+
+		li {
+			background: settings.$color-1;
+			border-radius: 18px;
+			padding: 4px 8px;
+			font-size: 1rem;
+		}
+
+		p {
+			color: settings.$color-5;
+			font-size: 1rem;
+			line-height: 1.25rem;
+			height: 10rem;
+			overflow-y: scroll;
+
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+		.fa-star {
+			color: #eeb31d;
+		}
+		.btn {
+			background-color: settings.$color-3;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+			border: none;
+			color: white;
+			padding: 5px 10px;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 14px;
+			text-transform: uppercase;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: settings.$color-1;
+        color: settings.$color-3;
+			}
 		}
 	}
 }

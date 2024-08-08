@@ -1,10 +1,10 @@
-@font-face{
-  font-family: "font-1";
-  src: url(../fonts/Raleway-Regular.ttf);
+@font-face {
+	font-family: "font-1";
+	src: url(../fonts/Raleway-Regular.ttf);
 }
 @font-face {
-  font-family: "font-2";
-  src: url(../fonts/Dosis-Regular.ttf);
+	font-family: "font-2";
+	src: url(../fonts/Dosis-Regular.ttf);
 }
 
 $font-1: "font-1", sans-serif;
@@ -12,31 +12,38 @@ $font-2: "font-2", serif;
 
 $color-1: #160827;
 $color-2: #361836;
-$color-3:#F22577;
-$color-4:#848593;
+$color-3: #FC094B;
+$color-4: #848593;
 $color-5: #eeeff5;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: $font-1;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style-type: none;
+	text-decoration: none;
+	font-family: $font-1;
 }
 
 body {
-  background-color: $color-1;
-  color: $color-5;
+	background: rgb(231, 44, 119);
+	background: linear-gradient(
+		344deg,
+		rgba(231, 44, 119, 1) 0%,
+		rgba(91, 30, 69, 1) 50%,
+		rgba(2, 0, 36, 1) 100%
+	);
+	color: $color-5;
 }
 
-h1{
-  padding: 1.25rem;
+h1 {
+	padding: 1.25rem;
 }
 
-.result{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,  minmax(260px, 1fr));
-  gap: 1.25rem;
-  justify-content: center;
+.result {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	justify-content: center;
+	padding: 1.25rem;
+	gap: 1.25rem;
 }
