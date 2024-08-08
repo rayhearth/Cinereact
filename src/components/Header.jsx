@@ -14,7 +14,7 @@ const Header = () => {
 					</li>
 				</ul>
 			</nav>
-			<h1>Ciné React</h1>
+			<h1>ReactReel</h1>
 		</header>
 	);
 };
