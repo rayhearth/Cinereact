@@ -123,7 +123,7 @@ const Card = ({ movie }) => {
 				<p>{movie.overview}</p>
 				{movie.genre_ids ? (
 					<div className="btn" onClick={() => addStorage()}>
-						J'aime <i class="fa-solid fa-heart"></i>
+						J'aime <i className="fa-solid fa-heart"></i>
 					</div>
 				) : (
 					<div
@@ -133,7 +133,7 @@ const Card = ({ movie }) => {
 							window.location.reload();
 						}}
 					>
-						Supprimer <i class="fa-solid fa-trash-can"></i>
+						Supprimer <i className="fa-solid fa-trash-can"></i>
 					</div>
 				)}
 			</div>

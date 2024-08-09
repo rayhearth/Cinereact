@@ -1,34 +1,35 @@
-nav{
-  ul{
-    display: flex;
-    align-items: center;
-    gap: 1.25rem;
-    padding: 1.25rem;
-    a{
-      color: settings.$color-5;
-      background-color:settings.$color-1;
-      padding: 0.25rem 1.25rem;
-      border-radius: 1.5rem;
-      border: 1px solid transparent;
-      transition:all .5s ease-in-out;
-      &:hover{
-        color: settings.$color-3;
-        background-color:transparent;
-        border: 1px solid settings.$color-3;
-      }
-    }
-    a.nav-active {
-      background: settings.$color-3;
-      &:hover{
-        color: settings.$color-3;
-        background-color: transparent;
-        border: 1px solid settings.$color-3;
-      }
-  }
-}
+nav {
+	ul {
+		display: flex;
+		align-items: center;
+		gap: 1.25rem;
+		padding: 1.25rem;
+		a {
+			color: settings.$color-5;
+			background-color: settings.$color-1;
+			padding: 0.25rem 1.25rem;
+			border-radius: 1.5rem;
+			border: 1px solid transparent;
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				color: settings.$color-3;
+				background-color: transparent;
+				border: 1px solid settings.$color-3;
+			}
+		}
+		a.nav-active {
+			background: settings.$color-3;
+			&:hover {
+				color: settings.$color-3;
+				background-color: transparent;
+				border: 1px solid settings.$color-3;
+			}
+		}
+	}
 }
 
-h1{
+h1 {
+	text-transform: capitalize;
   text-align: center;
-  text-transform: capitalize;
+  padding: 1.25rem;
 }
