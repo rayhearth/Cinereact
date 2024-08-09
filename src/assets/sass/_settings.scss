@@ -12,7 +12,7 @@ $font-2: "font-2", serif;
 
 $color-1: #160827;
 $color-2: #361836;
-$color-3: #FC094B;
+$color-3: #fc094b;
 $color-4: #848593;
 $color-5: #eeeff5;
 
@@ -25,17 +25,29 @@ $color-5: #eeeff5;
 	font-family: $font-1;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-	background: rgb(231, 44, 119);
+	background: -webkit-linear-gradient(
+		344deg,
+		rgba(231, 44, 119, 1) 0%,
+		rgba(91, 30, 69, 1) 50%,
+		rgba(2, 0, 36, 1) 100%
+	);
 	background: linear-gradient(
 		344deg,
 		rgba(231, 44, 119, 1) 0%,
 		rgba(91, 30, 69, 1) 50%,
 		rgba(2, 0, 36, 1) 100%
 	);
+	background-size: cover;
+	background-repeat: no-repeat;
 	color: $color-5;
 }
-
 
 .result {
 	display: grid;
@@ -45,17 +57,15 @@ body {
 	gap: 1.25rem;
 }
 
-
 //Animation
 
 @keyframes cardAppear {
 	from {
-			opacity: 0;
-			transform: translate(1rem, 1rem);
+		opacity: 0;
+		transform: translate(1rem, 1rem);
 	}
 	to {
-			opacity: 1;
-			transform: translate(0, 0);
+		opacity: 1;
+		transform: translate(0, 0);
 	}
 }
-
